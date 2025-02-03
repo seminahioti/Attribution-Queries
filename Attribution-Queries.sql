@@ -74,7 +74,7 @@ SELECT COUNT(DISTINCT user_id)
 FROM page_visits
 WHERE page_name = '4 - purchase';
 
--- Step 6: 
+-- Step 6: How many last touches on the purchase page is each campaign responsible for? This query will look similar to your last-touch query, but with an additional WHERE clause.
 SELECT utm_campaign,
   COUNT(DISTINCT user_id) as num_page_4
 FROM page_visits
